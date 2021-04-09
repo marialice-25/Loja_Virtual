@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,6 +16,17 @@ namespace Loja_Virtual_Dev.DTO
                                       '{produtos.Quantidade}','{produtos.FornecedorID}','{produtos.CategoriaID}','{produtos.Imagem}')");
 
             con.ExecutarSQL(sql);
+        }
+
+        public void Excluir(produtos produtos)
+        {
+            string sql = string.Format($@"DELETE FROM PRODUTOS WHERE ID = {produtos.Id}");
+            con.ExecutarSQL(sql);
+        }
+
+        public void Alterar(produtos produtos)
+        {
+            string sql = string.Format($@"UPDATE PRODUTOS SET NOME = ");
         }
     }
 }
