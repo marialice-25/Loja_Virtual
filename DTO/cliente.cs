@@ -8,11 +8,12 @@ namespace Loja_Virtual_Dev.DTO
     public class cliente
     {
         private string nome, telefone, endereco, cidade, estado, sexo, email, senha, cep;
-        private int idade;
+        private int id, idade, produtosid;
 
         public string Sexo { get => sexo; set => sexo = value; }
         public int Idade { get => idade; set => idade = value; }
-
+        public int Id { get => id; set => id = value; }
+        public int Produtosid { get => produtosid; set => produtosid = value; }
         public string Nome
         {
             set
