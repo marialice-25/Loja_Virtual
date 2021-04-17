@@ -1,22 +1,19 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Loja_Virtual_Dev.UI.index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="perfil.aspx.cs" Inherits="Loja_Virtual_Dev.UI.perfil" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Mercado Virtual</title>
+    <title></title>
 </head>
 <body>
     <form id="form1" runat="server">
-             <nav>
+                             <nav>
                 <div>
                     <ul>
                         <li>
                             <asp:HyperLink ID="HiperLinkInicial" NavigateUrl="~/UI/index.aspx" Text="Home" runat="server"></asp:HyperLink>
-                        </li>
-                        <li>
-                            <asp:HyperLink ID="HiperLinkLogin" NavigateUrl="~/UI/login.aspx" Text="Login" runat="server"></asp:HyperLink>
                         </li>
                          <li>
                             <asp:HyperLink ID="HyperLinkProdutos" NavigateUrl="~/UI/produtos.aspx" Text="Produtos" runat="server"></asp:HyperLink>
@@ -27,13 +24,11 @@
                     </ul>
                 </div>
             </nav>
-            <main>
-                 <asp:Image ImageUrl="~/IMG/japaoInicio.jpg" AlternateText="Imagem não carregada" runat="server" Height="251px" Width="688px" />
-            </main>
-        <footer>
-            <p>CopyRight &copy; Desenvolvido por Maria Alice </p>
-            <p>Todos os direitos respeitados</p>
-        </footer>
+       <div>
+            <h1>PERFIL</h1>
+            <asp:Image ImageUrl="~/IMG/japao.jpg" AlternateText="Imagem não carregada" runat="server" Height="255px" Width="313px" />
+        </div>
+
     </form>
 </body>
 </html>

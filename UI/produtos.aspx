@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Loja_Virtual_Dev.UI.index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="produtos.aspx.cs" Inherits="Produtos" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Mercado Virtual</title>
+    <title>Produtos</title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -27,13 +27,6 @@
                     </ul>
                 </div>
             </nav>
-            <main>
-                 <asp:Image ImageUrl="~/IMG/japaoInicio.jpg" AlternateText="Imagem não carregada" runat="server" Height="251px" Width="688px" />
-            </main>
-        <footer>
-            <p>CopyRight &copy; Desenvolvido por Maria Alice </p>
-            <p>Todos os direitos respeitados</p>
-        </footer>
     </form>
 </body>
 </html>
