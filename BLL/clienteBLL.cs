@@ -12,6 +12,33 @@ namespace Loja_Virtual_Dev.BLL
     {
         private MySqlDAL con = new MySqlDAL();
 
+        public Boolean Autenticar(string email, string senha)
+        {
+            string sql = string.Format($@"SELECT * FROM CLIENTES WHERE EMAIL='{email}' AND SENHA = '{senha}'");
+            DataTable dt = con.ExecutarConsulta(sql);
+            if (dt.Rows.Count == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public string RecuperarSenha(string email)
+        {
+            string sql = string.Format($@"SELECT * FROM CLIENTE WHERE EMAIL= ''{email}");
+            DataTable dt = con.ExecutarConsulta(sql);
+            if(dt.Rows.Count == 1)
+            {
+                return dt.Rows[0]["senha"].ToString();
+            }
+            else
+            {
+                return "Usuário não identificado";
+            }
+        }
         public void Inserir(cliente cliente)
         {
             string sql = string.Format($@"INSERT INTO CLIENTES VALUES(NULL, '{cliente.Nome}','{cliente.Telefone}','{cliente.Cidade}',

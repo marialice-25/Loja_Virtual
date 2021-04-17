@@ -12,7 +12,7 @@ namespace Loja_Virtual_Dev.BLL
     {
         private MySqlDAL con = new MySqlDAL();
 
-        public void Inserir(fornecedor fornecedor)
+        public void Inserir(Fornecedor fornecedor)
         {
             string sql = string.Format($@"INSERT INTO FORNECEDOR VALUES(NULL, '{fornecedor.Id}','{fornecedor.Nome}','{fornecedor.Cnpj}',
                                        '{fornecedor.Email}','{fornecedor.Telefone}','{fornecedor.NomeRepresentante}','{fornecedor.TelefoneRepresentante}',
@@ -20,13 +20,13 @@ namespace Loja_Virtual_Dev.BLL
             con.ExecutarSQL(sql);
         }
 
-        public void Excluir(fornecedor fornecedor)
+        public void Excluir(Fornecedor fornecedor)
         {
             string sql = string.Format($@"DELETE FROM FORNECEDOR WHERE ID = {fornecedor.Id};");
             con.ExecutarSQL(sql);
         }
 
-        public void Alterar(fornecedor fornecedor)
+        public void Alterar(Fornecedor fornecedor)
         {
             string sql = string.Format($@"UPDATE FORNECEDOR  SET NOME = '{fornecedor.Id}',NOME='{fornecedor.Nome}',CNPJ='{fornecedor.Cnpj}',
                                       EMAIL= '{fornecedor.Email}',TELEFONE='{fornecedor.Telefone}',NOME_REPRESENTANTE='{fornecedor.NomeRepresentante}',
