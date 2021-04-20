@@ -6,8 +6,9 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
 </head>
-<body>
+<body class="text-center">
     <form id="form1" runat="server">
         <div>
             <asp:Image ImageUrl="~/IMG/japao.jpg" AlternateText="Imagem não carregada" runat="server" Height="255px" Width="313px" />
@@ -33,7 +34,7 @@
             <asp:Label ID="msgErro" Visible="false" ForeColor="Red" runat="server"></asp:Label>
         </div>
             </form>
-                <footer>
+                <footer class="footer-copy-right">
             <p>CopyRight &copy; Desenvolvido por Maria Alice </p>
             <p>Todos os direitos respeitados</p>
         </footer>

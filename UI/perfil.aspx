@@ -5,11 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>Perfil</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
 </head>
-<body>
+<body class="text-center">
     <form id="form1" runat="server">
-                             <nav>
+             <nav>
                 <div>
                     <ul>
                         <li>
@@ -28,7 +29,10 @@
             <h1>PERFIL</h1>
             <asp:Image ImageUrl="~/IMG/japao.jpg" AlternateText="Imagem não carregada" runat="server" Height="255px" Width="313px" />
         </div>
-
     </form>
+            <footer class="footer-copy-right">
+            <p>CopyRight &copy; Desenvolvido por Maria Alice </p>
+            <p>Todos os direitos respeitados</p>
+        </footer>
 </body>
 </html>

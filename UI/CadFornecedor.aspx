@@ -6,8 +6,9 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Fornecedor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
 </head>
-<body>
+<body class="text-center">
              <nav>
                 <div>
                     <ul>
@@ -23,7 +24,7 @@
         <asp:Image ImageUrl="~/IMG/japao.jpg" AlternateText="Imagem não carregada" runat="server" Height="255px" Width="313px" />
             <h1>CADASTRO DE FORNECEDOR</h1>
     <main>
-        <form id="form2" runat="server">
+        <form id="form2" class="form-signin" runat="server">
 
             <asp:HiddenField ID="id" runat="server" />
         <div>
@@ -68,7 +69,7 @@
                     </div>
             </form>
     </main>
-            <footer>
+            <footer class="footer-copy-right"> 
             <p>CopyRight &copy; Desenvolvido por Maria Alice </p>
             <p>Todos os direitos respeitados</p>
         </footer>

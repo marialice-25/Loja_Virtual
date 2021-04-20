@@ -48,7 +48,7 @@ namespace Loja_Virtual_Dev.UI
 
         protected void btnCadastro_Click(object sender, EventArgs e)
         {
-            Response.Redirect("cadastro.aspx");
+            Response.Redirect("CadastroCliente.aspx");
         }
 
         protected void btnEsqueci_Click(object sender, EventArgs e)

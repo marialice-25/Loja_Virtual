@@ -6,8 +6,9 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Cadastro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
 </head>
-<body>
+<body class="text-center">
                  <nav>
                 <div>
                     <ul>
@@ -44,7 +45,7 @@
         </div>
                   <div>
             <asp:Label for="txtSexo" Text="Sexo: " runat="server"></asp:Label>
-            <asp:DropDownList runat="server" ID="txtSexo" OnSelectedIndexChanged="Unnamed11_SelectedIndexChanged">
+            <asp:DropDownList runat="server" ID="txtSexo">
                 <asp:ListItem>Feminino</asp:ListItem>
                 <asp:ListItem>Masculino</asp:ListItem>
                 <asp:ListItem>Outro</asp:ListItem>
@@ -70,7 +71,7 @@
                     <asp:Label Text="" ID="msgErro" ForeColor="Red" Visible="false" class="col-sm-2 col-form-label" runat="server"></asp:Label>
               </div>
             </form>
-                <footer>
+                <footer class="footer-copy-right">
             <p>CopyRight &copy; Desenvolvido por Maria Alice </p>
             <p>Todos os direitos respeitados</p>
         </footer>
