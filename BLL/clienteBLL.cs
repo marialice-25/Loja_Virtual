@@ -42,8 +42,7 @@ namespace Loja_Virtual_Dev.BLL
         public void Inserir(cliente cliente)
         {
             string sql = string.Format($@"INSERT INTO CLIENTES VALUES(NULL, '{cliente.Nome}','{cliente.Telefone}','{cliente.Cidade}',
-                                       '{cliente.Estado}','{cliente.Cep}','{cliente.Estado}','{cliente.Email}','{cliente.Senha}','{cliente.Endereco}',
-                                        '{cliente.Produtosid}');");
+                                       '{cliente.Estado}','{cliente.Cep}','{cliente.Estado}','{cliente.Email}','{cliente.Senha}','{cliente.Endereco}');");
             con.ExecutarSQL(sql);
         }
 
