@@ -1,4 +1,4 @@
-using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -14,7 +14,7 @@ namespace Loja_Virtual_Dev.DAL
         private static string user = "root";
         private static string password = "";
 
-        private string stringConexao = "Server: " + server + "; Database: " + database + "; User: " + user + "; Password: " + password;
+        private string stringConexao = "Server= " + server + "; Database= " + database + "; User= " + user + "; Password= " + password;
 
         public MySqlConnection conexao;
 
@@ -35,6 +35,7 @@ namespace Loja_Virtual_Dev.DAL
         {
             try
             {
+                Conectar();
                 MySqlCommand comando = new MySqlCommand(sql, conexao);
                 comando.ExecuteNonQuery();
             }
