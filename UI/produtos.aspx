@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="produtos.aspx.cs" Inherits="Produtos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="produtos.aspx.cs" Inherits="Loja_Virtual_Dev.UI.produtos" %>
 
 <!DOCTYPE html>
 

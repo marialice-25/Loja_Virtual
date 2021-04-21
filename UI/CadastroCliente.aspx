@@ -43,6 +43,10 @@
             <asp:Label for="txtEstado" Text="Estado: " runat="server"></asp:Label>
             <asp:TextBox ID="txtEstado" type="text" runat="server"></asp:TextBox>
         </div>
+                      <div>
+            <asp:Label for="txtCep" Text="Cep: " runat="server"></asp:Label>
+            <asp:TextBox ID="txtCep" type="text" runat="server"></asp:TextBox>
+        </div>
                   <div>
             <asp:Label for="txtSexo" Text="Sexo: " runat="server"></asp:Label>
             <asp:DropDownList runat="server" ID="txtSexo">
@@ -65,6 +69,7 @@
         </div>
         <div>
             <asp:Button Text="CADASTRAR" ID="btnCadastrar" runat="server" OnClick="btnCadastrar_Click" />
+            <asp:Button Text="LOGIN" ID="btnLogin" runat="server"  OnClick="btnLogin_Click"/>
         </div>
             <div class="form-group">
                     <asp:Label Text="" ID="msgOK" ForeColor="Green" Visible="false" class="col-sm-2 col-form-label" runat="server"></asp:Label>

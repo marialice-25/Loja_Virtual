@@ -24,12 +24,13 @@ namespace Loja_Virtual_Dev.UI
             {
                 clienteDTO.Nome = txtNome.Text;
                 clienteDTO.Telefone = txtTelefone.Text;
-                clienteDTO.Endereco = txtEndereco.Text;
                 clienteDTO.Cidade = txtCidade.Text;
-                clienteDTO.Estado = txtEmail.Text;
+                clienteDTO.Estado = txtEstado.Text;
+                clienteDTO.Cep = txtCep.Text;
                 clienteDTO.Sexo = txtSexo.SelectedValue.ToString();
                 clienteDTO.Email = txtEmail.Text;
                 clienteDTO.Senha = txtSenha.Text;
+                clienteDTO.Endereco = txtEndereco.Text;
                 clienteBLL.Inserir(clienteDTO);
 
                 string mensagem = "Cliente cadastrado com sucesso!";
@@ -41,6 +42,11 @@ namespace Loja_Virtual_Dev.UI
                 msgErro.Visible = true;
                 msgErro.Text = ex.Message;
             }
+        }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("login.aspx");
         }
 
     }

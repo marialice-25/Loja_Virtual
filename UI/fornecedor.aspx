@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
 </head>
 <body class="text-center">
-    <form id="form1" runat="server">
              <nav>
                 <div>
                     <ul>
@@ -29,14 +28,15 @@
                 </div>
             </nav>
         <main>
- <div class="form-group">
+           <form id="form1" runat="server">
+           <div class="form-group">
             <asp:GridView ID="GridProdutos" AutoGenerateColumns="False" BackColor="#FF66FF"
                 SelectedRowStyle-BackColor="#ffccff"  
                 OnRowEditing="GridProdutos_RowEditing"
                 OnRowCancelingEdit="GridProdutos_RowCancelingEdit"
                 OnRowUpdated="GridProdutos_RowUpdated"
                 DataKeyNames="id"
-                OnRowDeleting="GridProdutos_RowDeleting" runat="server">
+                OnRowDeleting="GridProdutos_RowDeleting" runat="server">    
                 <Columns>
                     <asp:TemplateField HeaderText="ID">
                         <ItemTemplate>
@@ -97,11 +97,11 @@
             </asp:GridView>
 
         </div>
+        </form>
         </main>
             <footer class="footer-copy-right">
             <p>CopyRight &copy; Desenvolvido por Maria Alice </p>
             <p>Todos os direitos respeitados</p>
         </footer>
-    </form>
 </body>
 </html>
