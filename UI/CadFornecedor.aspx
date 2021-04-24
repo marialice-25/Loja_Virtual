@@ -7,6 +7,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Fornecedor</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+        <style>
+        body{
+            background-color: 	#ADD8E6;    
+        }
+    </style>
 </head>
 <body class="text-center">
              <nav>

@@ -11,8 +11,7 @@ namespace Loja_Virtual_Dev.UI
 {
     public partial class CadProduto : System.Web.UI.Page
     {
-
-        Produtos produtos = new Produtos();
+        Produto produtos = new Produto();
         ProdutoBLL produtosBLL = new ProdutoBLL();
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -25,7 +24,7 @@ namespace Loja_Virtual_Dev.UI
             {
                 produtos.Nome = txtNome.Text;
                 produtos.Descricao = txtDescricao.Text;
-                produtos.Valor = txtValor.Text;
+                produtos.Valor = Convert.ToDouble(txtValor.Text);
                 produtos.CategoriaID = Convert.ToInt32(txtCategoria.SelectedValue.ToString());
                 produtos.FornecedorID = Convert.ToInt32(txtFornecedor.SelectedValue.ToString());
                 produtos.Quantidade = Convert.ToInt32(txtQuantidade.Text);

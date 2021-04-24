@@ -7,6 +7,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Cadastro produto</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <style>
+        body{
+            background-color: 	#ADD8E6;    
+        }
+    </style>
 </head>
 <body class="text-center">
           <nav>
@@ -40,12 +45,12 @@
             <asp:Label for="txtValor" Text="Valor: " runat="server"></asp:Label>
             <asp:TextBox ID="txtValor" type="text" runat="server"></asp:TextBox>
         </div>
-                  <div>
+                  <div> 
             <asp:Label for="txtDescricao" Text="Descricao: " runat="server"></asp:Label>
-            <asp:TextBox ID="txtDescricao" TextMode="MultiLine" Columns="30" Rows="5" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtDescricao" TextMode="MultiLine" Columns="30" Rows="4" runat="server"></asp:TextBox>
         </div>
                 <div>
-            <asp:Label for="txtQuantidade" Text="Telefone: " runat="server"></asp:Label>
+            <asp:Label for="txtQuantidade" Text="Quantidade: " runat="server"></asp:Label>
             <asp:TextBox ID="txtQuantidade" type="text" runat="server"></asp:TextBox>
         </div>
                   <div>

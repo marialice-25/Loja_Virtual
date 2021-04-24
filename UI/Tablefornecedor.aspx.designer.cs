@@ -11,7 +11,7 @@ namespace Loja_Virtual_Dev.UI
 {
 
 
-    public partial class Produtos
+    public partial class Tablefornecedor
     {
 
         /// <summary>
