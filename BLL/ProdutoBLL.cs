@@ -11,7 +11,7 @@ namespace Loja_Virtual_Dev.DTO
     {
         private MySqlDAL con = new MySqlDAL();
 
-        public void Inserir(Produtos produtos)
+        public void Inserir(Produto produtos)
         {
             string sql = string.Format($@"INSERT INTO PRODUTOS VALUES(NULL,'{produtos.Nome}', '{produtos.Valor}', '{produtos.Descricao}', 
                                       '{produtos.Quantidade}','{produtos.Validade}','{produtos.FornecedorID}','{produtos.CategoriaID}','{produtos.Imagem}');");
@@ -19,13 +19,13 @@ namespace Loja_Virtual_Dev.DTO
             con.ExecutarSQL(sql);
         }
 
-        public void Excluir(Produtos produtos)
+        public void Excluir(Produto produtos)
         {
             string sql = string.Format($@"DELETE FROM PRODUTOS WHERE ID = {produtos.Id};");
             con.ExecutarSQL(sql);
         }
 
-        public void Alterar(Produtos produtos)
+        public void Alterar(Produto produtos)
         {
             string sql = string.Format($@"UPDATE PRODUTOS SET NOME = '{produtos.Nome}',VALOR = '{produtos.Valor}',DESCRICAO ='{produtos.Descricao}',
                                         QUANTIDADE ='{produtos.Quantidade}',VALIDADE='{produtos.Validade}',FORNECEDORID'{produtos.FornecedorID}',
