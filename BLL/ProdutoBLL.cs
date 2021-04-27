@@ -4,9 +4,8 @@ using System.Data;
 using System.Linq;
 using System.Web;
 using Loja_Virtual_Dev.DAL;
-using Loja_Virtual_Dev.DTO;
 
-namespace Loja_Virtual_Dev.BLL
+namespace Loja_Virtual_Dev.DTO
 {
     public class ProdutoBLL
     {

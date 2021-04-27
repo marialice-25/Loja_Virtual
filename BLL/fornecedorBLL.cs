@@ -14,9 +14,8 @@ namespace Loja_Virtual_Dev.BLL
 
         public void Inserir(Fornecedor fornecedor)
         {
-            string sql = string.Format($@"INSERT INTO FORNECEDOR VALUES(NULL, '{fornecedor.Id}','{fornecedor.Nome}','{fornecedor.Cnpj}',
-                                       '{fornecedor.Email}','{fornecedor.Telefone}','{fornecedor.NomeRepresentante}','{fornecedor.TelefoneRepresentante}',
-                                       '{fornecedor.Produtosid}';");
+            string sql = string.Format($@"INSERT INTO FORNECEDOR VALUES(NULL,'{fornecedor.Nome}','{fornecedor.Cnpj}',
+                                       '{fornecedor.Email}','{fornecedor.Telefone}','{fornecedor.NomeRepresentante}','{fornecedor.TelefoneRepresentante}';");
             con.ExecutarSQL(sql);
         }
 
@@ -28,7 +27,7 @@ namespace Loja_Virtual_Dev.BLL
 
         public void Alterar(Fornecedor fornecedor)
         {
-            string sql = string.Format($@"UPDATE FORNECEDOR  SET NOME = '{fornecedor.Id}',NOME='{fornecedor.Nome}',CNPJ='{fornecedor.Cnpj}',
+            string sql = string.Format($@"UPDATE FORNECEDOR  SET ID = '{fornecedor.Id}',NOME='{fornecedor.Nome}',CNPJ='{fornecedor.Cnpj}',
                                       EMAIL= '{fornecedor.Email}',TELEFONE='{fornecedor.Telefone}',NOME_REPRESENTANTE='{fornecedor.NomeRepresentante}',
                                       TELEFONE_REPRESENTANTE='{fornecedor.TelefoneRepresentante}';");
             con.ExecutarSQL(sql);

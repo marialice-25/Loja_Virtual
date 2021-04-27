@@ -14,7 +14,7 @@ namespace Loja_Virtual_Dev.BLL
 
         public void Inserir(Categoria categoria)
         {
-            string sql = string.Format($@"INSERT INTO CATEGORIA VALUES(NULL,'{categoria.Nome}','{categoria.Descricao}','{categoria.Produtosid}');");
+            string sql = string.Format($@"INSERT INTO CATEGORIA VALUES(NULL,'{categoria.Nome}','{categoria.Descricao}');");
             con.ExecutarSQL(sql);
         }
         public void Excluir(Categoria categoria)
@@ -25,7 +25,7 @@ namespace Loja_Virtual_Dev.BLL
 
         public void Alterar(Categoria categoria)
         {
-            string sql = string.Format($@"UPDATE CLIENTES SET NOME='{categoria.Nome}',DESCRICAO='{categoria.Descricao}',PRODUTOS='{categoria.Produtosid}';");
+            string sql = string.Format($@"UPDATE CLIENTES SET NOME='{categoria.Nome}',DESCRICAO='{categoria.Descricao}';");
             con.ExecutarSQL(sql);
         }
 
