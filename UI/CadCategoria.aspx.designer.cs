@@ -11,7 +11,7 @@ namespace Loja_Virtual_Dev.UI
 {
 
 
-    public partial class fornecedor
+    public partial class CadCategoria
     {
 
         /// <summary>
@@ -31,6 +31,15 @@ namespace Loja_Virtual_Dev.UI
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLinkProdutos;
+
+        /// <summary>
+        /// Controle HyperLinkFornecedor.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkFornecedor;
 
         /// <summary>
         /// Controle form2.
@@ -60,49 +69,13 @@ namespace Loja_Virtual_Dev.UI
         protected global::System.Web.UI.WebControls.TextBox txtNome;
 
         /// <summary>
-        /// Controle txtCnpj.
+        /// Controle txtDescricao.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCnpj;
-
-        /// <summary>
-        /// Controle txtEmail.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
-
-        /// <summary>
-        /// Controle txtTelefone.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTelefone;
-
-        /// <summary>
-        /// Controle txtNomeRepresentante.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNomeRepresentante;
-
-        /// <summary>
-        /// Controle txtTelefoneRepresentante.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTelefoneRepresentante;
+        protected global::System.Web.UI.WebControls.TextBox txtDescricao;
 
         /// <summary>
         /// Controle btnCadastrar.

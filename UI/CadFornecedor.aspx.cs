@@ -23,7 +23,6 @@ namespace Loja_Virtual_Dev.UI
             try
             {
                 fornecedorDTO.Nome = txtNome.Text;
-                fornecedorDTO.Produtosid = Convert.ToInt32(txtProdutos.SelectedValue.ToString());
                 fornecedorDTO.Cnpj = txtCnpj.Text;
                 fornecedorDTO.Email = txtEmail.Text;
                 fornecedorDTO.Telefone = txtTelefone.Text;
@@ -31,7 +30,7 @@ namespace Loja_Virtual_Dev.UI
                 fornecedorDTO.TelefoneRepresentante = txtTelefoneRepresentante.Text;
                 fornecedorBLL.Inserir(fornecedorDTO);
 
-                string mensagem = "Fronecedor cadastrado com sucesso!";
+                string mensagem = "Fornecedor cadastrado com sucesso!";
                 ScriptManager.RegisterStartupScript(Page, Page.GetType(), Guid.NewGuid().ToString(), "alert('" + mensagem + "')", true);
 
             }
@@ -46,7 +45,6 @@ namespace Loja_Virtual_Dev.UI
         {
             txtNome.Text = "";
             txtNomeRepresentante.Text = "";
-            txtProdutos.SelectedIndex = -1;
         }
     }
 }
