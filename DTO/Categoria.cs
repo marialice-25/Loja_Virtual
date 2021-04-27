@@ -7,10 +7,9 @@ namespace Loja_Virtual_Dev.DTO
 {
     public class Categoria
     {
-        private int id, produtosid;
+        private int id;
         private string nome, descricao;
         public string Descricao { get => descricao; set => descricao = value; }
-        public int Produtosid { get => produtosid; set => produtosid = value; }
         public int Id { get => id; set => id = value; }
 
         public string Nome

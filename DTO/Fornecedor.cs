@@ -7,12 +7,11 @@ namespace Loja_Virtual_Dev.DTO
 {
     public class Fornecedor
     {
-        private int id, produtosid;
+        private int id;
         private string nome, cnpj, email, telefone, nomeRepresentante, telefoneRepresentante;
 
         public string TelefoneRepresentante { get => telefoneRepresentante; set => telefoneRepresentante = value; }
         public string NomeRepresentante { get => nomeRepresentante; set => nomeRepresentante = value; }
-        public int Produtosid { get => produtosid; set => produtosid = value; }
         public int Id { get => id; set => id = value; }
 
         public string Telefone
