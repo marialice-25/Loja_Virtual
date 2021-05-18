@@ -15,12 +15,12 @@ namespace Loja_Virtual_Dev.UI
         fornecedorBLL fornecedor = new fornecedorBLL();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Exibir();
         }
         public void Exibir()
         {
             string pesquisa = "C.NOME LIKE '%" + txtPesquisa.Text + "%'";
-            GridProdutos.DataSource = fornecedor.Pesquisar(pesquisa);
+            GridProdutos.DataSource = fornecedor.ConsultarID();
             GridProdutos.DataBind();
         }
         protected void btnNovo_Click(object sender, EventArgs e)
@@ -35,6 +35,7 @@ namespace Loja_Virtual_Dev.UI
         {
             fornecedorDTO.Id = Convert.ToInt32(GridProdutos.DataKeys[e.RowIndex].Value.ToString());
             fornecedor.Excluir(fornecedorDTO);
+            Exibir();
         }
         protected void GridProdutos_RowEditing(object sender, GridViewEditEventArgs e)
         {
