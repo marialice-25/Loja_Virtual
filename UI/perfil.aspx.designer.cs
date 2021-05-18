@@ -49,5 +49,23 @@ namespace Loja_Virtual_Dev.UI
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLinkFonecedor;
+
+        /// <summary>
+        /// Controle HyperLinkCadCategoria.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkCadCategoria;
+
+        /// <summary>
+        /// Controle HyperLinkTableFornecedor.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkTableFornecedor;
     }
 }

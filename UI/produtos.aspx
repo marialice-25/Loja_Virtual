@@ -27,7 +27,7 @@
                             <asp:HyperLink ID="HyperLinkProdutos" NavigateUrl="~/UI/CadProduto.aspx" Text="Cadastro Produtos" runat="server"></asp:HyperLink>
                         </li>
                           <li class="nav-item">
-                            <asp:HyperLink ID="HyperLinkFonecedor" NavigateUrl="~/UI/fornecedor.aspx" Text="Fornecedores" runat="server"></asp:HyperLink>
+                            <asp:HyperLink ID="HyperLinkFonecedor" NavigateUrl="~/UI/CadFornecedor.aspx" Text="Fornecedores" runat="server"></asp:HyperLink>
                     </li>
                     </ul>
                 </div>

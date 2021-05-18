@@ -19,7 +19,6 @@ namespace Loja_Virtual_Dev.UI
         }
         public void Exibir()
         {
-            string pesquisa = "C.NOME LIKE '%" + txtPesquisa.Text + "%'";
             GridProdutos.DataSource = fornecedor.ConsultarID();
             GridProdutos.DataBind();
         }
