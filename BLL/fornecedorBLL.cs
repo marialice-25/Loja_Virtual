@@ -33,9 +33,9 @@ namespace Loja_Virtual_Dev.BLL
             con.ExecutarSQL(sql);
         }
 
-        public DataTable ConsultarID(int id)
+        public DataTable ConsultarID()
         {
-            string sql = string.Format($@"SELECT * FROM FORNECEDOR WHERE ID = '{id}';");
+            string sql = string.Format($@"SELECT * FROM FORNECEDOR;");
             return con.ExecutarConsulta(sql);
         }
         public DataTable Pesquisar(string condicao)
