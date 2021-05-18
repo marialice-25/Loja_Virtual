@@ -15,7 +15,7 @@ namespace Loja_Virtual_Dev.BLL
         public void Inserir(Fornecedor fornecedor)
         {
             string sql = string.Format($@"INSERT INTO FORNECEDOR VALUES(NULL,'{fornecedor.Nome}','{fornecedor.Cnpj}',
-                                       '{fornecedor.Email}','{fornecedor.Telefone}','{fornecedor.NomeRepresentante}','{fornecedor.TelefoneRepresentante}';");
+                                       '{fornecedor.Email}','{fornecedor.Telefone}','{fornecedor.NomeRepresentante}','{fornecedor.TelefoneRepresentante}');");
             con.ExecutarSQL(sql);
         }
 
